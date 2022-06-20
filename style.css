@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Palanquin", sans-serif;
+}
+
+/* NAVIGATION */
+nav {
+  max-width: 140rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 4rem;
+  align-items: center;
+}
+
+.job-title {
+  font-size: clamp(1rem, 2vw, 1.6rem);
+  text-transform: uppercase;
+}
+
+.jt-1 {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.jt-2 {
+  font-weight: 500;
+}
+
+.jt-3 {
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+  display: none;
+  text-transform: uppercase;
+  margin-top: 14px;
+}
+
+ul.show {
+  display: flex;
+}
+
+li a {
+  text-decoration: none;
+  color: #000;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+li a:hover {
+  color: #000;
+  opacity: 0.8;
+}
+
+nav button {
+  border: none;
+  background-color: transparent;
+  font-size: clamp(2.4rem, 3vw, 3rem);
+  display: block;
+}
+
+@media (max-width: 650px) {
+  .nav-logo {
+    max-width: 3.8rem;
+    padding-right: 5px;
+  }
+}
+
+/* HEADING SECTION */
+
+.heading {
+  max-width: 100rem;
+  display: flex;
+  align-items: flex-end;
+  margin: 8rem auto;
+  padding: 0 3rem;
+}
+
+h1 {
+  font-size: clamp(1rem, 10vw, 9rem);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.heading p {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  text-transform: uppercase;
+  margin-left: 10rem;
+  margin-bottom: 1.8rem;
+  font-weight: 600;
+}
+
+/* PROJECT SECTION */
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  margin-top: 12rem;
+  padding: 0 3rem;
+}
+
+.reverse {
+  grid-auto-flow: dense;
+  direction: rtl;
+}
+
+.p-img {
+  max-width: 50rem;
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.p-img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
+}
+
+.project-info {
+  max-width: 45.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-info p {
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.project-btn a:hover {
+  opacity: 0.8;
+}
+
+.project-btn {
+  border: none;
+  background-color: #000;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.project-btn a {
+  text-decoration: none;
+  color: #fff;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  transition: 0.3s;
+}
+
+.project-link {
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+}
+
+.project-link:hover {
+  color: #000;
+  opacity: 0.8;
+}
+
+@media (max-width: 1300px) {
+  .p-img {
+    max-width: 35rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .p-img {
+    max-width: 24rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* SKILLS SECTION */
+.skills {
+  margin-top: 20rem;
+}
+
+.skills-img {
+  text-align: center;
+}
+
+.skills-display {
+  margin-left: 20rem;
+  padding: 2rem 4rem;
+}
+
+.skills-display p {
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
+@media (max-width: 700px) {
+  .skills-display {
+    margin-left: 10rem;
+  }
+}
+
+/* CONTACT SECTION */
+
+.contact {
+  margin-top: 20rem;
+  padding: 6rem 4rem 10rem 4rem;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+h3 {
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+.email {
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.contact a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  transition: 0.3s;
+}
+
+.contact a:hover {
+  opacity: 0.8;
+}
+
+.copyright {
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+
+.contact img {
+  border-radius: 100%;
+  max-width: 15rem;
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  margin-bottom: 2rem;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.contact img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
